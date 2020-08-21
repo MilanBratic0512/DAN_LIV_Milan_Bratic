@@ -16,7 +16,6 @@ namespace Zadatak_1
 
         public string RegNumber { get; set; }
         public int NumberOfDoors { get; set; }
-        //public int EngineDisplacement { get; set; }
         public string TypeOfTransmision { get; set; }
         public string Manufacturer { get; set; }
         public int TrafficLicenseNumber { get; set; }
@@ -59,7 +58,7 @@ namespace Zadatak_1
             TrafficLicenseNumber = r.Next(10000, 100000);
         }
 
-        public void PostaviNaStart()
+        public void SetToStart()
         {
             Console.WriteLine("The car {0} is set to start", RegNumber);
         }
